@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logomain-removebg-preview.png" width= "300" height="300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo" title="Student Dashboard">
+            <img src="./images/logomain-removebg-preview.png" width="3000" height="3000" alt="">
+      </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+
+                <a href="password.html">
+                    <span class="material-icons-sharp">password</span>
+                    <h3>Change Password</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp" onclick="">logout</span>
+                    <h3>Logout</h3>
+           
+           
+            </a>
+          </div>
+          <div id="profile-btn" >
+            <span class="material-icons-sharp">person</span>
+            
+        </div>  
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <!-- <img src="./images/profile-1.jpg" alt=""> -->
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Aryan</b> </p>
+                        <small class="text-muted">20151024</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BE. Instrumentation</p>
+                    <!-- <h5>DOB</h5>
+                    <p>29-Feb-200</p> -->
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>aryansharma14aug@gmail.com</p>
+                    <h5>College</h5>
+                    <p>Bharati Vidyapeeth College Of Engineering,Navi Mumbai</p>
+                    <br>
+                    <br>
+                    <span class="material-symbols-outlined">
+                        approval
+                        </span>
+
+                    <a href="certificate.html"><h3>Certificates</h3></a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Subjects</h1>
+            <div class="subjects">
+                <div class="dsp"><a href="pdf.html">
+                    <span class="material-icons-sharp">
+                        functions
+                        </span>
+                    <h3>Digital Signal Processing</h3>
+                    <h2></h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>86%</p></div>
+                    </a>
+                    </div>
+            
+                </div>
+                <div class="idc"><a href="pdf.html">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>Industrial Data Communication</h3>
+                    <h2></h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>93%</p></div>
+                    </a>
+                    </div>
+                    
+                </div>
+                <div class="ipc"><a href="pdf.html">
+                    <span class="material-symbols-outlined">
+                        valve
+                        </span>
+                    <h3>Industrial Process Control</h3>
+                    <h2></h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>81%</p></div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="ot"><a href="pdf.html">
+                    <span class="material-symbols-outlined">
+                        function
+                        </span>
+                    <h3>Optimization Technique</h3>
+                    <h2></h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>96%</p></div></a>
+                    </div>
+                 </div>
+
+
+
+                <div class="pyt"><a href="pdf.html">
+                    <span class="material-icons-sharp">code</span>
+                    <h3>Python</h3>
+                    <h2></h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>92%</p></div>
+                    </a>
+                    </div>
+                
+                </div>
+            
+               <div class="mp"><a href="pdf.html">
+                 <span class="material-symbols-outlined">
+                    diversity_3
+                    </span>
+                <h3>Mini Project</h3>
+                <h2></h2>
+                <div class="progress">
+                    <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                    <div class="number"><p>81%</p></div>
+                </a>
+                </div>
+            </div>
+
+           
+                
+        </main>
+
+        <div class="right">
+            <div class="announcements" >
+                <h2>Tasks</h2>
+                
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic :</b > Mini Project- Student Dashboard</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular :</b> Deparment commitee work</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Examination :</b> Mid Term Examination Prepration.</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Examination :</b> 10 days remaining for Ut-2 exams</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Assignment :</b> DSP assignment due 3/4/2023</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                
+                
+                </div>
+            </div> 
+        
+
+        </div>
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

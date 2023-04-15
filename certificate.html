@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logomain-removebg-preview.png" width= "300" height="300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  
+/* certificates */
+   /* The grid: Four equal columns that floats next to each other */
+   .column {
+    margin-top:100px;
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+    
+    /* Style the images inside the grid */
+    .column img {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+    
+    .column img:hover {
+      opacity: 1;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+      position: relative;
+      display: none;
+    }
+    
+    /* Expanding image text */
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+    
+    /* Closable button inside the image */
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="logo" title="Student Dashboard">
+          <a href="index.html">  <img src="./images/logomain-removebg-preview.png" width="3000" height="3000" alt=""></a>
+      </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+
+                <a href="password.html">
+                  <span class="material-icons-sharp">password</span>
+                  <h3>Change Password</h3>
+              </a>
+              <a href="#">
+                  <span class="material-icons-sharp" onclick="">logout</span>
+                  <h3>Logout</h3>
+           
+           
+            </a>
+          </div>
+          <div id="profile-btn" >
+            <span class="material-icons-sharp">person</span>
+            
+        </div>  
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        </header>
+        
+        
+            <!-- The grid: four columns -->
+     <div class="row">
+    <div class="column">
+        
+      <img src="certificate_aryan.png" alt="rubicon" onclick="myFunction(this);">
+      <br>
+      <h3>rubicon</h3>
+    </div>
+    <div class="column">
+      <img src="skillupfsd.png" alt="SkillUp Full Stack Devlopment" onclick="myFunction(this);">
+      <br>
+      <h3>SkillUp Full Stack Devlopment</h3>
+    </div>
+    <div class="column">
+      <img src="skilluppy.png" alt="SkillUp Python" onclick="myFunction(this);">
+      <br>
+      <h3>SkillUp Python</h5>
+    </div>
+    <div class="column">
+      <img src="Screenshot 2023-03-07 162236.png" alt="ExcelR Full Stack Devlopment" onclick="myFunction(this);">
+     <br>
+      <h3>ExcelR Full Stack Devlopment</h3>
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+ 
+   </body>
+   </html>
